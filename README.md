@@ -1,15 +1,11 @@
-# Angular Windows 95
+# Pink Angular Windows 95
 
-Angular base to make simple web-apps with Windows 95 style. 
+Forked from the [Angular 95](https://github.com/Nytyr/angular-windows-95)
 
-Done using the [Windows 95 UI Kit](https://github.com/themesberg/windows-95-ui-kit)
+A fork of [Angular 95](https://github.com/Nytyr/angular-windows-95), with React95's Candy color scheme, windows logo on start button, and adding icons to taskbar items.
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/nytyr/angular-windows-95/master/demo.png" alt="W95">
-
-
-<img src="https://raw.githubusercontent.com/nytyr/angular-windows-95/master/demo.gif" alt="W95 Gif">
-
+<img src="https://raw.githubusercontent.com/egeulk/angular-windows-95-pink/master/demo.png" alt="W95">
 
 ## Add components to the start menu
 
@@ -35,6 +31,8 @@ menu: MenuItem[] = [
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+You must run "$env:NODE_OPTIONS = "--openssl-legacy-provider" on Windows, "export NODE_OPTIONS=--openssl-legacy-provider" on Unix like OSes.
 
 ## Code scaffolding
 
