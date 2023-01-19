@@ -6,13 +6,17 @@ import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DraggableDirective } from './draggable.directive';
 import { WindowsService } from './windows.service';
+import { AboutYouComponent } from './about-you/about-you.component';
+import { FunnyspiderComponent } from './funnyspider/funnyspider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     WelcomeComponent,
-    DraggableDirective
+    DraggableDirective,
+    AboutYouComponent,
+    FunnyspiderComponent
   ],
   imports: [
     BrowserModule

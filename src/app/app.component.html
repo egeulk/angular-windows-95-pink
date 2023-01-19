@@ -21,6 +21,8 @@
     </div>
   </section>
 </main>
+
+<!--start menu-->
 <div *ngIf="startMenuOpened" class="start-menu card card-tertiary w-100 fmxw-300" [ngStyle]="{'z-index': this.lastZIndex + 1}">
   <div class="card-header text-center">
     <span>Start Menu</span>
@@ -29,18 +31,22 @@
     <ul class="navbar-nav navbar-nav-hover align-items-center">
       <li class="nav-item start-menu-item" *ngFor="let item of menu" (click)="openMenuItem(item)">
         <div class="nav-link" role="button">
-          <span class="nav-link-inner-text">{{item.name}}</span>
+          <img src={{item.image}} alt="image" width="20" height="20">
+          <span class="nav-link-inner-text"> {{item.name}}</span>
         </div>
       </li>
     </ul>
   </div>
 </div>
+
+
 <footer>
   <nav id="navbar-footer" class="navbar navbar-main navbar-expand-lg navbar-dark justify-content-between navbar-footer">
     <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
       <li class="nav-item">
-        <div class="nav-link" role="button" [ngClass]="{pressed: startMenuOpened}" (click)="startMenuOpened = !startMenuOpened">
-          <span class="nav-link-inner-text">📺 Start</span>
+        <div class="nav-link task-bar" role="button" [ngClass]="{pressed: startMenuOpened}" (click)="startMenuOpened = !startMenuOpened">
+          <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" width="20" height="20">
+          <span class="nav-link-inner-text"> Start</span>
         </div>
       </li>
       <li class="nav-item" *ngFor="let window of openedWindows; let i = index">

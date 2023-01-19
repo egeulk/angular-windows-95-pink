@@ -1,4 +1,6 @@
 import { AfterViewInit, Component, ComponentFactoryResolver, QueryList, ViewChildren, ViewContainerRef } from '@angular/core';
+import { AboutYouComponent } from './about-you/about-you.component';
+import { FunnyspiderComponent } from './funnyspider/funnyspider.component';
 import { MenuItem } from './menu.item';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -12,30 +14,43 @@ import { WindowsService } from './windows.service';
 export class AppComponent implements AfterViewInit {
   menu: MenuItem[] = [
     {
-      name: '📕 Welcome',
-      goTo: WelcomeComponent,
+      name: 'Who are you?',
+      image: 'https://win98icons.alexmeub.com/icons/png/help_book_big-0.png',
+      goTo: AboutYouComponent,
+    },
+{
+      name: 'Funni Spider',
+      image: 'https://win98icons.alexmeub.com/icons/png/multimedia-2.png',
+      goTo: FunnyspiderComponent,
     },
     {
-      name: '📄 Register',
-      goTo: RegisterComponent,
+      name: 'Instagram',
+      image: 'https://win98icons.alexmeub.com/icons/png/camera3-4.png',
+      goTo: 'instagram.com/nursimayldrm/',
     },
+
     {
-      name: '🔗 Github',
-      goTo: 'https://github.com/nytyr',
+      name: 'Twitter',
+      image: 'https://win98icons.alexmeub.com/icons/png/notepad_file-2.png',
+      goTo: 'https://twitter.com/ruhsalbunalimda',
     }
+
   ];
 
   date = new Date();
   startMenuOpened = false;
   lastZIndex = 10;
   lastWindowOpened = 0;
-  openedWindows = [
+ 
+  openedWindows = [];
+   /*
     {
       component: WelcomeComponent,
       zIndex: this.lastZIndex,
       title: '📕 Welcome'
     }
   ];
+  */
 
   @ViewChildren('dynamic', {read: ViewContainerRef})
   public windowTargets: QueryList<ViewContainerRef>;

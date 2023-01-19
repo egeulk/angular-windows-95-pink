@@ -15,7 +15,7 @@
 }
 
 .bg-secondary {
-    background-color: #008081 !important;
+    background-color: rgb(180 119 189) !important;
 }
 
 .bg-tertiary {
@@ -1604,7 +1604,7 @@ button.section-black:focus {
 
 .navbar {
     height: 38px;
-    background: #C0C0C0;
+    background: rgb(229, 164, 203);
     padding-left: 4px;
     padding-right: 4px;
     border-bottom: 2px solid #FCFCFC;
@@ -1631,7 +1631,7 @@ button.section-black:focus {
     font-size: .65rem;
     color: black;
     text-transform: normal;
-    background: #C0C0C0;
+    background: rgb(229, 164, 203);
     letter-spacing: 0;
     font-weight: 400;
     padding: 4px 10px;
@@ -1758,6 +1758,9 @@ button.section-black:focus {
     }
     .navbar-nav .nav-item.show [data-toggle="dropdown"]::after {
         transform: rotate(180deg);
+    }
+    .task-bar {
+        display: flex;
     }
     .navbar-nav .nav-link {
         padding-top: 1rem;
@@ -2616,10 +2619,12 @@ button.section-black:focus {
     border-radius: 0.125rem;
     padding: .6rem 2rem;
     max-height: 37px;
+    background-color: rgb(229, 164, 203);
 }
 
 .btn:before,
 .btn:after {
+    background-color: rgb(229, 164, 203);
     content: '';
     position: absolute;
     box-sizing: border-box;
@@ -2628,6 +2633,7 @@ button.section-black:focus {
     z-index: 9;
     top: 0;
     left: 0;
+    
 }
 
 .btn:before {
@@ -2800,9 +2806,11 @@ button.section-black:focus {
     height: 2rem;
 }
 
+
+
 .btn-primary {
     color: #000;
-    background-color: #c0c0c0;
+    background-color:rgb(229, 164, 203);
     border-color: #a0a0a0;
 }
 
@@ -3719,7 +3727,7 @@ button.section-black:focus {
      border-right: 2px solid #393939;
      border-bottom: 2px solid #393939;
      border-radius: 0;
-     background: #C0C0C0;
+     background: rgb(241, 172, 213);
  }
 
  .card-primary .card-header {
@@ -3732,7 +3740,7 @@ button.section-black:focus {
  }
 
  .card-tertiary .card-header {
-     background: #000181;
+     background: rgb(135, 37, 91);
      color: white;
  }
 
@@ -3754,10 +3762,10 @@ button.section-black:focus {
 
  .card-body {
      padding: 10px 7px;
-     border-top: 2px solid #BDBDBD;
-     border-left: 3px solid #BDBDBD;
-     border-right: 3px solid #BDBDBD;
-     border-bottom: 2px solid #bdbdbd;
+     border-top: 2px solid rgb(241, 172, 213);
+     border-left: 3px solid rgb(241, 172, 213);
+     border-right: 3px solid rgb(241, 172, 213);
+     border-bottom: 2px solid rgb(241, 172, 213);
  }
 
  .card-footer {
