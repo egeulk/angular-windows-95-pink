@@ -2,7 +2,7 @@
 
 A fork of [Angular 95](https://github.com/Nytyr/angular-windows-95), with React95's Candy color scheme, windows logo on start button, and adding icons to taskbar items.
 
-A live demo can be found [here](https://calm-stone-02731f310.2.azurestaticapps.net) which I've made for a crush of mine. Might be a little cringe but oh well.
+A live demo can be found [here](https://calm-stone-02731f310.2.azurestaticapps.net) which I've made for an old girlfriend of mine. Might be a little cringe but oh well.
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/egeulk/angular-windows-95-pink/master/demo.png" alt="W95">
